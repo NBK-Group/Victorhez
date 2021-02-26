@@ -1,7 +1,7 @@
 # bookings
 
-A new Flutter project.
-
+Manage Booking Screen Completed
+<img src="./Screenshot.png" width="50%" height="50%">
 ## Getting Started
 
 This project is a starting point for a Flutter application.
