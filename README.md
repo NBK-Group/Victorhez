@@ -1,2 +1,2 @@
 # Victorhez
-<img src="./Screenshot.png" width="50%" height="50%">
+<img src="./bookings/Screenshot.png" width="50%" height="50%">
