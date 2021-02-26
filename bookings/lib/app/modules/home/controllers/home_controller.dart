@@ -17,7 +17,9 @@ class HomeController extends GetxController with SingleGetTickerProviderMixin {
     ),
     Text(
       "My Bookings",
-      style: GoogleFonts.lato(fontSize: 16, fontWeight: FontWeight.w100),
+      style: GoogleFonts.lato(
+        fontSize: 16,
+      ),
     ),
     Text(
       "Timeline",

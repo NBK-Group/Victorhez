@@ -150,11 +150,44 @@ class HomeView extends GetView<HomeController> {
                           details: "L7T 0T8, Toronto, ON",
                           type: "RENT",
                           confirmed: "11",
+                          image: "assets/images/chia.png",
                           pending: "2",
                           cancelled: "5"),
                       homeCard(
                           header: "8954 Dundas St West",
                           details: "L5A 0B9, Mississauga, ON",
+                          type: "SALE",
+                          confirmed: "19",
+                          image: "assets/images/dubai.png",
+                          pending: "2",
+                          cancelled: "5"),
+                      homeCard(
+                          header: "8954 Blood St",
+                          details: "M5B 4Z3, Toronto, ON",
+                          type: "SALE",
+                          confirmed: "24",
+                          image: "assets/images/russia.png",
+                          pending: "2",
+                          cancelled: "5")
+                    ],
+                  ),
+                  ListView(
+                    children: [
+                      SizedBox(
+                        height: 10,
+                      ),
+                      homeCard(
+                          header: "8954 Eglington Avenue ",
+                          details: "L7T 0T8, Toronto, ON",
+                          image: "assets/images/chia.png",
+                          type: "RENT",
+                          confirmed: "11",
+                          pending: "2",
+                          cancelled: "5"),
+                      homeCard(
+                          header: "8954 Dundas St West",
+                          details: "L5A 0B9, Mississauga, ON",
+                          image: "assets/images/dubai.png",
                           type: "SALE",
                           confirmed: "19",
                           pending: "2",
@@ -163,6 +196,7 @@ class HomeView extends GetView<HomeController> {
                           header: "8954 Blood St",
                           details: "M5B 4Z3, Toronto, ON",
                           type: "SALE",
+                          image: "assets/images/russia.png",
                           confirmed: "24",
                           pending: "2",
                           cancelled: "5")
@@ -177,6 +211,7 @@ class HomeView extends GetView<HomeController> {
                           header: "8954 Eglington Avenue ",
                           details: "L7T 0T8, Toronto, ON",
                           type: "RENT",
+                          image: "assets/images/chia.png",
                           confirmed: "11",
                           pending: "2",
                           cancelled: "5"),
@@ -184,6 +219,7 @@ class HomeView extends GetView<HomeController> {
                           header: "8954 Dundas St West",
                           details: "L5A 0B9, Mississauga, ON",
                           type: "SALE",
+                          image: "assets/images/dubai.png",
                           confirmed: "19",
                           pending: "2",
                           cancelled: "5"),
@@ -191,34 +227,7 @@ class HomeView extends GetView<HomeController> {
                           header: "8954 Blood St",
                           details: "M5B 4Z3, Toronto, ON",
                           type: "SALE",
-                          confirmed: "24",
-                          pending: "2",
-                          cancelled: "5")
-                    ],
-                  ),
-                  ListView(
-                    children: [
-                      SizedBox(
-                        height: 10,
-                      ),
-                      homeCard(
-                          header: "8954 Eglington Avenue ",
-                          details: "L7T 0T8, Toronto, ON",
-                          type: "RENT",
-                          confirmed: "11",
-                          pending: "2",
-                          cancelled: "5"),
-                      homeCard(
-                          header: "8954 Dundas St West",
-                          details: "L5A 0B9, Mississauga, ON",
-                          type: "SALE",
-                          confirmed: "19",
-                          pending: "2",
-                          cancelled: "5"),
-                      homeCard(
-                          header: "8954 Blood St",
-                          details: "M5B 4Z3, Toronto, ON",
-                          type: "SALE",
+                          image: "assets/images/russia.png",
                           confirmed: "24",
                           pending: "2",
                           cancelled: "5")
