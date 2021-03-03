@@ -45,7 +45,7 @@ class HomeView extends GetView<HomeController> {
               ]),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: 33, right: 40),
               child: Container(
                 // Negative padding
 
@@ -112,11 +112,11 @@ class HomeView extends GetView<HomeController> {
                           },
                           child: Icon(Icons.search_outlined))),
                   SizedBox(
-                    width: 10,
+                    width: 32.5,
                   ),
                   Icon(Icons.filter_list_outlined),
                   SizedBox(
-                    width: 10,
+                    width: 18.8,
                   )
                 ],
               ),
@@ -142,9 +142,6 @@ class HomeView extends GetView<HomeController> {
                   ListView(
                     shrinkWrap: true,
                     children: [
-                      SizedBox(
-                        height: 10,
-                      ),
                       homeCard(
                           header: "8954 Eglington Avenue ",
                           details: "L7T 0T8, Toronto, ON",

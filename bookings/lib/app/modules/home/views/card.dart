@@ -19,9 +19,9 @@ Widget homeCard(
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-                color: Color(0xff9E9E9E).withOpacity(0.3),
+                color: Color(0xff9E9E9E).withOpacity(0.1),
                 blurRadius: 27.182,
-                offset: Offset(1, 4.5))
+                offset: Offset(0, 0))
           ],
           borderRadius: BorderRadius.circular(24)),
       child: Column(
@@ -156,24 +156,28 @@ Widget homeCard(
             ),
           ),
           SizedBox(
-            height: 16,
+            height: 11,
           ),
           Container(
-            height: 48,
+            height: 53,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(16),
                     bottomRight: Radius.circular(16)),
                 border: Border.all(
                     color: Color(0xffF0F0F0), style: BorderStyle.solid)),
-            child: Center(
+            child: Padding(
+                padding:
+                    EdgeInsets.only(top: 14, bottom: 15, left: 132, right: 131),
                 child: Text(
-              "See Details",
-              style: GoogleFonts.lato(
-                  color: Color(0xff696969),
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold),
-            )),
+                  "See Details",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.lato(
+                      color: Color(0xff696969),
+                      letterSpacing: 0.5,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700),
+                )),
           ),
         ],
       ),
