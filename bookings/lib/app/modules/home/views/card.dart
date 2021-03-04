@@ -10,18 +10,23 @@ Widget homeCard(
     String confirmed,
     String pending,
     cancelled}) {
-  return Padding(
+  return Container(
+    color: Colors.white,
     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 33),
     child: Container(
-      height: 186,
+      height: 167,
       width: 343,
       decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-                color: Color(0xff9E9E9E).withOpacity(0.1),
-                blurRadius: 27.182,
-                offset: Offset(0, 0))
+                color: Color(0xff9E9E9E)
+                    .withOpacity(0.3)
+                    .withBlue(158)
+                    .withGreen(158)
+                    .withRed(158),
+                blurRadius: 27.1828,
+                offset: Offset(2, 3))
           ],
           borderRadius: BorderRadius.circular(24)),
       child: Column(
@@ -29,7 +34,7 @@ Widget homeCard(
         children: [
           Padding(
             padding: const EdgeInsets.only(
-              top: 25,
+              top: 12,
             ),
             child: Row(
               children: [
@@ -46,7 +51,7 @@ Widget homeCard(
                       children: [
                         Image.asset(image),
                         Padding(
-                          padding: const EdgeInsets.only(top: 60, left: 20),
+                          padding: const EdgeInsets.only(top: 62, left: 20),
                           child: Container(
                             height: 24,
                             width: 67,
@@ -159,13 +164,16 @@ Widget homeCard(
             height: 11,
           ),
           Container(
-            height: 53,
+            height: 48,
+            width: 384,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(16),
                     bottomRight: Radius.circular(16)),
                 border: Border.all(
-                    color: Color(0xffF0F0F0), style: BorderStyle.solid)),
+                    width: 1,
+                    color: Color(0xffF0F0F0),
+                    style: BorderStyle.solid)),
             child: Padding(
                 padding:
                     EdgeInsets.only(top: 14, bottom: 15, left: 132, right: 131),

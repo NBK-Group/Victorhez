@@ -8,6 +8,7 @@ class HomeController extends GetxController with SingleGetTickerProviderMixin {
   final count = 0.obs;
   TabController controller;
   RxBool searchVisibility = false.obs;
+  RxBool filterVisibility = true.obs;
   RxBool searchButtonVisibility = true.obs;
   RxInt selectedIndex = 0.obs;
   List<Widget> tabs = [
@@ -20,11 +21,7 @@ class HomeController extends GetxController with SingleGetTickerProviderMixin {
       style: GoogleFonts.lato(
         fontSize: 16,
       ),
-    ),
-    Text(
-      "Timeline",
-      style: GoogleFonts.lato(fontSize: 16),
-    ),
+    )
   ];
   @override
   void onInit() {
