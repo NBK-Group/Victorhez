@@ -1,4 +1,5 @@
 import 'package:bookings/app/modules/home/views/card.dart';
+import 'package:bookings/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:bookings/app/modules/home/controllers/home_controller.dart';
@@ -12,7 +13,9 @@ class HomeView extends GetView<HomeController> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          leading: Image.asset("assets/images/arrow_back.png"),
+          leading: GestureDetector(
+                        onTap: ()=>Get.toNamed(Routes.AGENT_NEW_LISTING),
+                        child: Image.asset("assets/images/arrow_back.png")),
           title: Text(
             'Manage Bookings',
             style: GoogleFonts.lato(
@@ -79,8 +82,9 @@ class HomeView extends GetView<HomeController> {
                         color: Color(0xff200E32),
                       ),
                       suffixIcon: Icon(
-                        Icons.filter_list_outlined,
-                        color: Color(0xff696969),
+                          Icons.filter_list_outlined,
+                          color: Color(0xff696969),
+                
                       ),
                       hintText: "Search",
                       border: InputBorder.none,

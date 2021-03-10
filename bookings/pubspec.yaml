@@ -22,6 +22,7 @@ environment:
 
 dependencies:
   google_fonts: ^1.1.2
+  date_time_picker: ^2.0.0
   get: 3.25.4
   flutter:
     sdk: flutter
