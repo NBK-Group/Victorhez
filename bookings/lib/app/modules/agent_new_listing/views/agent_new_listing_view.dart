@@ -85,9 +85,10 @@ class AgentNewListingView extends GetView<AgentNewListingController> {
             height: 38,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 29),
+            padding: const EdgeInsets.only(left: 12),
             child: TabBar(
               tabs: controller.tabs,
+              isScrollable: true,
               labelStyle: GoogleFonts.lato(
                 fontWeight: FontWeight.bold,
 
@@ -106,7 +107,7 @@ class AgentNewListingView extends GetView<AgentNewListingController> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 66, right: 35),
+            padding: EdgeInsets.only(left: 29, right: 100),
             child: Container(
               // Negative padding
 
@@ -124,7 +125,7 @@ class AgentNewListingView extends GetView<AgentNewListingController> {
           ),
           Expanded(
             child: TabBarView(controller: controller.controller, children: [
-              Text("Jn"),
+              Center(child: Text("Jn")),
               Padding(
                 padding: const EdgeInsets.only(left: 26),
                 child: Column(
@@ -297,7 +298,7 @@ class AgentNewListingView extends GetView<AgentNewListingController> {
                   ],
                 ),
               ),
-              Text("Jn"),
+              Center(child: Text("Jn")),
             ]),
           )
         ],
